@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".RegisterActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="30dp"
+        >
+
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sign Up"
+            android:textColor="@color/black"
+            android:textSize="60dp"
+            android:textStyle="bold"
+
+            />
+
+        <EditText
+            android:layout_marginTop="40dp"
+            android:id="@+id/nicTxt"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:ems="10"
+            android:paddingStart="10dp"
+            android:background="@drawable/borders"
+            android:inputType="textPersonName"
+            android:hint="Nic Number" />
+
+
+
+        <EditText
+            android:layout_marginTop="40dp"
+            android:id="@+id/nameTxt"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:ems="10"
+            android:paddingStart="10dp"
+            android:background="@drawable/borders"
+            android:inputType="text"
+            android:hint="Full Name" />
+
+
+
+        <EditText
+            android:layout_marginTop="40dp"
+            android:id="@+id/emailTxt"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:ems="10"
+            android:paddingStart="10dp"
+            android:background="@drawable/borders"
+            android:inputType="textEmailAddress"
+            android:hint="Email" />
+
+
+        <EditText
+            android:layout_marginTop="40dp"
+            android:id="@+id/dobTxt"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:ems="10"
+            android:paddingStart="10dp"
+            android:background="@drawable/borders"
+            android:inputType="textPersonName"
+            android:focusable="false"
+            android:hint="Date of birth day" />
+        <EditText
+            android:layout_marginTop="40dp"
+            android:id="@+id/adNoTxt"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:ems="10"
+            android:paddingStart="10dp"
+            android:background="@drawable/borders"
+            android:inputType="text"
+            android:hint="Address no" />
+        <EditText
+            android:layout_marginTop="40dp"
+            android:id="@+id/adStreetTxt"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:ems="10"
+            android:paddingStart="10dp"
+            android:background="@drawable/borders"
+            android:inputType="textPersonName"
+            android:hint="Address street" />
+        <EditText
+            android:layout_marginTop="40dp"
+            android:id="@+id/adCityTxt"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:ems="10"
+            android:paddingStart="10dp"
+            android:background="@drawable/borders"
+            android:inputType="textPersonName"
+            android:hint="Address city" />
+        <EditText
+            android:layout_marginTop="40dp"
+            android:id="@+id/numberTxt"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:ems="10"
+            android:paddingStart="10dp"
+            android:background="@drawable/borders"
+            android:inputType="number"
+            android:hint="Phone number" />
+
+
+        <EditText
+            android:layout_marginTop="40dp"
+            android:id="@+id/passwordTxt"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:ems="10"
+            android:paddingStart="10dp"
+            android:background="@drawable/borders"
+            android:inputType="textPassword"
+            android:hint="password" />
+
+
+
+
+
+
+        <Button
+            android:id="@+id/regBtn"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button"
+            android:text="Register" />
+        <TextView
+            android:id="@+id/backLoginBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:clickable="true"
+            android:textColor="@color/black"
+            android:text="Already have An Account ? Login"
+            android:textSize="18dp"
+            android:layout_marginBottom="20dp"/>
+
+
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>
