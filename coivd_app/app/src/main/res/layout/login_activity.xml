@@ -80,6 +80,13 @@
             android:textSize="18dp"
             android:layout_marginBottom="20dp"/>
 
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="140dp"
+            android:layout_height="156dp"
+            android:layout_gravity="right"
+            app:srcCompat="@drawable/ic_undraw_access_account_re_8spm" />
+
 
     </LinearLayout>
 </androidx.core.widget.NestedScrollView>

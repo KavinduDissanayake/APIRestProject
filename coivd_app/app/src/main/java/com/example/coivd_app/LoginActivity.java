@@ -67,7 +67,7 @@ public class LoginActivity extends AppCompatActivity {
 
     private void LoginWithDatabase() {
 
-        // ---------------------------------Validation   Part------------------------------------------
+        // ---------------------------------Validation Part------------------------------------------
         if (TextUtils.isEmpty(nicText.getText().toString())) {
             nicText.setError("Nic is required !");
             return;

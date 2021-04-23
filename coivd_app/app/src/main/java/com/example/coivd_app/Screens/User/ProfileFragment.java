@@ -93,7 +93,7 @@ View view;
 
 
 
-private  String CURRENT_UID="34";
+private  String CURRENT_UID="";
 
 
     private String TAG="ProfileFragment";
@@ -219,6 +219,8 @@ private  String CURRENT_UID="34";
         CURRENT_UID=sharedpreferences.getString("uid","");
 
 
+        Log.e(TAG,CURRENT_UID);
+
 
 
         pd = new ProgressDialog(getContext());
@@ -289,6 +291,7 @@ private  String CURRENT_UID="34";
 
 
                                 nicEdit.setText(mJsonObject.getString( "nic" )+"");
+                                full_name.setText(mJsonObject.getString( "name" )+"");
                                 nameEdit.setText(mJsonObject.getString( "name" )+"");
                                 emailEdit.setText(mJsonObject.getString( "email" )+"");
                                 dobEdit.setText(mJsonObject.getString( "dob" )+"");
