@@ -31,6 +31,22 @@ class CDC {
 
 
 
+public function read() {
+
+    $query = "SELECT `uid`,`nic`,`name`,`email`,`dob`,`no`,`street`,`city`,`phone_num`,`status`,`img_path`,`lat` as 'current_lat',`lon` as  'current_lon' 
+    FROM $this->table
+    WHERE `user_role`='CDC';";
+
+  // echo $query;
+
+
+    $stmt = $this -> con -> prepare($query);
+
+    $stmt->execute();
+
+    return $stmt;
+}
+
 
 
 

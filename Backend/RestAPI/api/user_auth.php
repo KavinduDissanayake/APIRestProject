@@ -16,16 +16,12 @@
 
  $user = new  User($db);
 
-
-
-
-
  $user->nic = isset($_POST['nic']) ? $_POST['nic'] : die();
  //use password encryption 
  $user->password = isset($_POST['password']) ? md5($_POST['password']) : die();
 
-
-
+//echo  $user->password ;
+ 
  //blog user  quary
  $result =$user -> user_auth();
 

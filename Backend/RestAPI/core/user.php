@@ -203,8 +203,8 @@ public function user_auth() {
    
     $query = "SELECT `uid`,`nic`,`user_role` 
     FROM $this->table
-    WHERE `user_role`='Citizens' 
-    AND (nic= :nic AND `password`=:password )LIMIT 1  ;";
+    WHERE 
+     (nic= :nic AND `password`=:password )LIMIT 1  ;";
    //echo $query;
     $stmt = $this -> con -> prepare($query);
 

@@ -22,6 +22,8 @@
   $user->city = isset($_POST['city']) ? $_POST['city'] : die();
   //use password encryption 
   $user->password = isset($_POST['password']) ? md5($_POST['password']) : die();
+
+
   $user->status = isset($_POST['status']) ? $_POST['status'] : die();
   $user->user_role = isset($_POST['user_role']) ? $_POST['user_role'] : die();
 
